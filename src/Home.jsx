@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Specificites,Banner,Specificites2} from '../src/index.';
+import { Navbar, Specificites,Banner,Blog,Connectez,Specificites2} from '../src/index.';
 
 function Home() {
   return (
@@ -8,8 +8,9 @@ function Home() {
       <Banner />
       <Specificites/>
       <Specificites2/>
+      <Connectez/>
 
-     
+      <Blog/>
     </div>
   );
 }

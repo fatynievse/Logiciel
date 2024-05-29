@@ -9,7 +9,7 @@ export default function Banner() {
           <div className="relative z-10 flex flex-col md:flex-row items-center justify-between p-6 md:p-12">
             <div className="flex flex-col items-start space-y-4 md:space-y-6">
               <div className="flex space-x-2">
-                <a href="#" className="bg-red-500 text-white px-2 py-1 rounded-md">Dyna Info</a>
+                <a href="#" className="bg-red-500 text-white px-2 py-1 rounded-md">Moritsoft</a>
               </div>
               <h1 className="text-6xl md:text-5xl font-bold text-blue-900 dark:text-white">Partenaire de votre transformation digitale</h1>
               <a href="#_" class="relative inline-block px-4 py-2 font-medium group">

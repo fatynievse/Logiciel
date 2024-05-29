@@ -1,39 +1,45 @@
-import { FaCheck } from 'react-icons/fa';
-
 export default function Widget() {
     return (
-        <div className="container mx-auto p-4">
-            <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                <div className="bg-white dark:bg-zinc-800 rounded-lg shadow-lg p-4">
-                    <div className="rounded-t-lg">
-                        <FaCheck className="text-green-500 text-4xl mx-auto" />
-                    </div>
-                    <h3 className="text-xl font-semibold mt-4">Pack spécial PARA</h3>
-                    <ul className="mt-2 space-y-2">
-                        <li className="flex items-start">
-                            <FaCheck className="text-green-500 mr-2" />
-                            <span>Gestion commerciale complète</span>
-                        </li>
-                        <li className="flex items-start">
-                            <FaCheck className="text-green-500 mr-2" />
-                            <span>Gestion de compte avec système de fidélité et de promotions</span>
-                        </li>
-                        <li className="flex items-start">
-                            <FaCheck className="text-green-500 mr-2" />
-                            <span>Gestion des commandes clients, des livraisons, et des expéditions</span>
-                        </li>
-                        <li className="flex items-start">
-                            <FaCheck className="text-green-500 mr-2" />
-                            <span>Livraison de commandes en stock pour éviter les erreurs et les délais supplémentaires</span>
-                        </li>
-                        <li className="flex items-start">
-                            <FaCheck className="text-green-500 mr-2" />
-                            <span>Interface de caisse française et arabe</span>
-                        </li>
-                    </ul>
-                </div>
-                {/* Repeat the above structure for other packs */}
+      <>
+        <div className="bg-blue-900 text-white p-8">
+          <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between">
+            <div>
+              <h2 className="text-2xl lg:text-4xl font-bold">VOUS SOUHAITEZ EN SAVOIR PLUS ?</h2>
+              <p className="mt-2 lg:mt-4">Prenez contact avec notre conseiller commercial pour une démonstration gratuite</p>
             </div>
+            <button className="mt-4 lg:mt-0 bg-red-500 text-white py-2 px-4 rounded-lg">CONTACTEZ-NOUS</button>
+          </div>
         </div>
-    )
-}
+        <div className="bg-blue-50 py-12">
+          <div className="max-w-7xl mx-auto px-4">
+            <div className="flex items-center mb-8">
+              <img src="https://placehold.co/50x50" alt="icon" className="mr-4" />
+              <div>
+                <h3 className="text-2xl font-bold text-blue-900">NOS CHIFFRES CLÉS EN 2022</h3>
+                <p className="text-blue-700">NOS ACCOMPLISSEMENTS</p>
+              </div>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div className="bg-white p-6 rounded-lg shadow-md text-center">
+                <h4 className="text-3xl font-bold text-blue-900">20</h4>
+                <p className="text-blue-700">Secteurs d'activité</p>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-md text-center">
+                <h4 className="text-3xl font-bold text-blue-900">80</h4>
+                <p className="text-blue-700">% de satisfaction</p>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-md text-center">
+                <h4 className="text-3xl font-bold text-blue-900">2,500</h4>
+                <p className="text-blue-700">Contrats de maintenance</p>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-md text-center">
+                <h4 className="text-3xl font-bold text-blue-900">4,500</h4>
+                <p className="text-blue-700">Clients</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
+    );
+  }
+  
