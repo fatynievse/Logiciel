@@ -1,5 +1,6 @@
 import { FaFacebook, FaYoutube, FaLinkedin, FaWhatsapp } from 'react-icons/fa'; // Import the icons
 import work from '../assets/work.jpg';
+import { Link } from 'react-router-dom';
 export default function Banner() {
     return (
         <div className="relative bg-light-blue-100 dark:bg-zinc-800 overflow-hidden">
@@ -12,10 +13,10 @@ export default function Banner() {
                 <a href="#" className="bg-red-500 text-white px-2 py-1 rounded-md">Moritsoft</a>
               </div>
               <h1 className="text-6xl md:text-5xl font-bold text-blue-900 dark:text-white">Partenaire de votre transformation digitale</h1>
-              <a href="#_" class="relative inline-block px-4 py-2 font-medium group">
-<span class="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-red-400 group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
-<span class="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-blue-500"></span>
-<span class="relative text-black group-hover:text-white">Contactez Nous</span>
+              <a href="#_" className="relative inline-block px-4 py-2 font-medium group">
+<span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-red-400 group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+<span className="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-blue-500"></span>
+<Link to='/ContactUs'><span className="relative text-black group-hover:text-white">Contactez Nous</span></Link>
 </a>
             </div>
             <div className="mt-6 md:mt-0">
@@ -23,10 +24,9 @@ export default function Banner() {
               
             </div>
           </div>
-          
           <div className="absolute left-0 top-1/2 transform -translate-y-1/2 space-y-2">
             {/* Replace the placeholder images with social media icons */}
-            <a href="#" className="block bg-blue-700 text-white p-2 rounded-full"><FaLinkedin /></a>
+            <a href="#" className="block bg-blue-700 text-white p-2 rounded-full "><FaLinkedin /></a>
             <a href="#" className="block bg-blue-600 text-white p-2 rounded-full"><FaFacebook /></a>
             <a href="#" className="block bg-red-600 text-white p-2 rounded-full"><FaYoutube /></a>
             <a href="#" className="block bg-green-500 text-white p-2 rounded-full"><FaWhatsapp /></a>
